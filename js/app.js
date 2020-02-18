@@ -1,14 +1,11 @@
 'use strict';
 
+var score = 0;
+
 var Uname = prompt('Hello my name is Israa , Whats your name ?');
 alert('Welcome to my website ' + Uname + ' :)');
 
-/*confirm(" Are you a female ? ");
-if(confirm == true){
-    document.body.style.background = "pink";
-} else {
-    document.body.style.background = "lightblue";
-}*/
+
 
 
 var gender = prompt('Are you a female ? please let your answer be yes or no').toUpperCase();
@@ -25,6 +22,7 @@ if(gender === 'YES' || gender === 'Y'){
 var me = prompt('Do you know if I am a girl or a boy ?').toUpperCase();
 if(me === 'YES' || me === 'Y'){
   alert(' Yes I am a girl ');
+  score ++;
 } else if(me === 'NO' || me === 'N') {
   alert(' its ok .. I am a girl');
 } else {
@@ -34,6 +32,7 @@ if(me === 'YES' || me === 'Y'){
 var prog = prompt('Do you think that I like programming ? ').toUpperCase();
 if(prog === 'YES' || prog === 'Y'){
   alert(' Yes I like it so much ');
+  score ++;
 } else if(prog === 'NO' || prog === 'N') {
   alert(' No I do like it ');
 } else {
@@ -42,17 +41,19 @@ if(prog === 'YES' || prog === 'Y'){
   var handmade = prompt('Do you think that I like the hand made things ? ').toUpperCase();
   if(handmade === 'YES' || handmade === 'Y'){
     alert(' Yes I like it and I have my own hand made gifts');
-} else if(handmade === 'NO' || handmade === 'N') {
+    score ++;
+  } else if(handmade === 'NO' || handmade === 'N') {
     alert('No , I do like it and I have my own hand made gifts ');
-} else {
+  } else {
     alert(' your didn\'t enter yes or no :( ... yes I do like it ');
-}
+  }
 }
 
 var art = prompt('Do you know what kind of hand made I use to make ? ').toUpperCase();
 if(art === 'YES' || art === 'Y'){
   alert(' So you already know me , thats great ');
-} else if(art == 'NO' || art == 'N') {
+  score ++;
+} else if(art === 'NO' || art === 'N') {
   alert(' The hand made that I use to make is String art ');
 } else {
   alert(' your didn\'t enter yes or no :( ... I make a string art ');
@@ -61,6 +62,7 @@ if(art === 'YES' || art === 'Y'){
 var str = prompt('Do you know what the String art is ? ').toUpperCase();
 if(str === 'YES' || str === 'Y'){
   alert(' Great , I\'m gonna show you some of my works ');
+  score ++;
 } else if(str === 'NO' || str === 'N') {
   alert(' It\'s ok .. now your going to know it ');
 } else {
@@ -68,17 +70,82 @@ if(str === 'YES' || str === 'Y'){
 }
 
 
-/*function Name(name){
 
-    var type = typeof name;
-    console.log(type);
+var guess =  Number(prompt('Guess what is my favourite number ? "Hint ... it\'s between 1-20 " '));
+var correctNum = 10 ;
+var guessTimes = 1;
 
-    if(type === String ){
-    var msg = alert("Welcome to my website " + name  + " :) ");
-    } else {
-        msg = Name(name) ;
+
+while(guessTimes < 4){
+  //console.log(guessTimes);
+  if (guess < correctNum && guess > 6) {
+    guess = Number(prompt('Your close !! .... try again  ? '));
+  }else if (guess > correctNum && guess < 14) {
+    guess = Number(prompt('Your close !! .... try again  ? '));
+  } else if (guess < 7 ) {
+    guess = Number(prompt('Your are too low !! .... try again  ? '));
+  }else if (guess > 13 ) {
+    guess = Number(prompt('Your are too high !! .... try again  ? '));
+  }
+  else if(guess === correctNum ){
+    alert('Correct, You\'r gussing is right ');
+    score++;
+    break;
+  }
+
+  guessTimes ++;
+}
+
+//console.log('the number of attempts for the number is ' + guessTimes);
+
+if(guessTimes === 4){
+  alert('sorry You have lost all your attempts :( ');
+}
+
+
+var movie = prompt('Try to guess one of my favourite movies .. ;) ').toLowerCase();
+var movList =['harry potter','lord of the ring','fantastic beasts','aladdin'];
+var guessTimes2 = 1;
+
+while(guessTimes2 < 6){
+
+  //console.log('movies gu time : ' + guessTimes2);
+
+  for(var i = 0 ; i < movList.length ; i++ ){
+    if (movie !== movList[i]) {
+      //console.log(i);
+      continue; }
+    else {
+      alert('Correct, You\'r gussing is right and you\'r gonna see list of my favourite movies inside the website');
+      score++;
+      break;
     }
- return msg ;
+  }
+  if(movie === movList[i]){
+    break;
+  } else {
+    guessTimes2 ++ ;
+    movie = prompt('NO .. Try again .. hint { I like fantasy movies } ;) ').toLowerCase();
+  } }
+
+
+//console.log('the number of attempts for the movies is ' + guessTimes2);
+//console.log('the score is ' + score);
+
+
+
+if(guessTimes2 === 6){
+  alert('sorry You have lost all your attempts :( you\'r gonna see a list of my favourite movies inside the website');
+}
+
+alert('Your score is ' + score + ' out of 6 .. ' );
+
+
+/*var ul = document.getElementById('list');
+var li = document.createElement('li');
+
+for(var n = 0 ; n < movList.length ; n++ ){
+  li.appendChild(document.createTextNode(movList[i]));
+  ul.appendChild(li);
+
 }*/
-
-

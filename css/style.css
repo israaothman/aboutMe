@@ -18,7 +18,14 @@ nav ul li{
     display: inline-block;
     padding: 0 15px;
 }
+ol  {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    list-style-type: decimal;
+    background-color: beige;
 
+}
 h2{
     text-align: center;
     padding: 8px;
@@ -40,7 +47,11 @@ p{
     margin: 8px;
 }
 
- ul li {
+ul{
+    padding: 20px;
+}
+
+ul li {
     font-size: 15px;
     margin-left: 20px;
     padding: 2px;
