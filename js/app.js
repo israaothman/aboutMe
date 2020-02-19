@@ -68,7 +68,7 @@ if(str === 'YES' || str === 'Y'){
 } else {
   alert('your didn\'t enter yes or no :( ');
 }
-
+0
 
 
 var guess =  Number(prompt('Guess what is my favourite number ? "Hint ... it\'s between 1-20 " '));
@@ -93,7 +93,7 @@ while(guessTimes < 4){
     break;
   }
 
-  guessTimes ++;
+  guessTimes ++;0
 }
 
 //console.log('the number of attempts for the number is ' + guessTimes);
