@@ -1,112 +1,166 @@
 'use strict';
 
 var score = 0;
+var myMsg = '';
+var correctNum = 10 ;
+var guessTimes = 1;
+var movList =['harry potter','lord of the ring','fantastic beasts','aladdin'];
+var guessTimes2 = 1;
+
+
 
 var Uname = prompt('Hello my name is Israa , Whats your name ?');
 alert('Welcome to my website ' + Uname + ' :)');
 
 
 
+function  Q1 (gender){
+
+  if(gender === 'YES' || gender === 'Y'){
+    document.body.style.background = 'pink';
+     myMsg = alert('the background of the webpage will be pink');
+  } else if(gender === 'NO' || gender === 'N') {
+    document.body.style.background = 'lightblue';
+     myMsg =alert(' the background of the webpage will be lightblue ');
+  } else {
+     myMsg =alert(' your didn\'t enter yes or no  :( ');
+  }
+
+  return  myMsg ;
+}
+
 
 var gender = prompt('Are you a female ? please let your answer be yes or no').toUpperCase();
-if(gender === 'YES' || gender === 'Y'){
-  document.body.style.background = 'pink';
-  alert('the background of the webpage will be pink');
-} else if(gender === 'NO' || gender === 'N') {
-  document.body.style.background = 'lightblue';
-  alert(' the background of the webpage will be lightblue ');
-} else {
-  alert(' your didn\'t enter yes or no  :( ');
+Q1(gender);
+
+
+function  Q2 (me){
+
+  if(me === 'YES' || me === 'Y'){
+    myMsg = alert(' Yes I am a girl ');
+    score ++;
+  } else if(me === 'NO' || me === 'N') {
+    myMsg = alert(' its ok .. I am a girl');
+  } else {
+    myMsg = alert(' your didn\'t enter yse or no :( ...  I am Girl');
+  }
+
+  return myMsg;
 }
+
 
 var me = prompt('Do you know if I am a girl or a boy ?').toUpperCase();
-if(me === 'YES' || me === 'Y'){
-  alert(' Yes I am a girl ');
-  score ++;
-} else if(me === 'NO' || me === 'N') {
-  alert(' its ok .. I am a girl');
-} else {
-  alert(' your didn\'t enter yse or no :( ...  I am Girl');
-}
+  Q2(me);
 
-var prog = prompt('Do you think that I like programming ? ').toUpperCase();
-if(prog === 'YES' || prog === 'Y'){
-  alert(' Yes I like it so much ');
-  score ++;
-} else if(prog === 'NO' || prog === 'N') {
-  alert(' No I do like it ');
-} else {
-  alert('your didn\'t enter yes or no :(  ... yes I like it ');
+
+  function  Q3 (prog){
+
+    
+    if(prog === 'YES' || prog === 'Y'){
+      myMsg = alert(' Yes I like it so much ');
+      score ++;
+    } else if(prog === 'NO' || prog === 'N') {
+      myMsg = alert(' No I do like it ');
+    } else {
+      myMsg = alert('your didn\'t enter yes or no :(  ... yes I like it ');}
+  
+    return myMsg;
+  }
+
+  var prog = prompt('Do you think that I like programming ? ').toUpperCase();
+  Q3(prog);
+
+
+  function  Q4 (handmade){
+
+    if(handmade === 'YES' || handmade === 'Y'){
+      myMsg = alert(' Yes I like it and I have my own hand made gifts');
+      score ++;
+    } else if(handmade === 'NO' || handmade === 'N') {
+      myMsg = alert('No , I do like it and I have my own hand made gifts ');
+    } else {
+      myMsg = alert(' your didn\'t enter yes or no :( ... yes I do like it ');
+    }
+    return myMsg;
+  }
 
   var handmade = prompt('Do you think that I like the hand made things ? ').toUpperCase();
-  if(handmade === 'YES' || handmade === 'Y'){
-    alert(' Yes I like it and I have my own hand made gifts');
-    score ++;
-  } else if(handmade === 'NO' || handmade === 'N') {
-    alert('No , I do like it and I have my own hand made gifts ');
-  } else {
-    alert(' your didn\'t enter yes or no :( ... yes I do like it ');
-  }
-}
-
-var art = prompt('Do you know what kind of hand made I use to make ? ').toUpperCase();
-if(art === 'YES' || art === 'Y'){
-  alert(' So you already know me , thats great ');
-  score ++;
-} else if(art === 'NO' || art === 'N') {
-  alert(' The hand made that I use to make is String art ');
-} else {
-  alert(' your didn\'t enter yes or no :( ... I make a string art ');
-}
-
-var str = prompt('Do you know what the String art is ? ').toUpperCase();
-if(str === 'YES' || str === 'Y'){
-  alert(' Great , I\'m gonna show you some of my works ');
-  score ++;
-} else if(str === 'NO' || str === 'N') {
-  alert(' It\'s ok .. now your going to know it ');
-} else {
-  alert('your didn\'t enter yes or no :( ');
-}
+  Q4(handmade);
 
 
+  function  Q5 (art){
 
-var guess =  Number(prompt('Guess what is my favourite number ? "Hint ... it\'s between 1-20 " '));
-var correctNum = 10 ;
-var guessTimes = 1;
-
-
-while(guessTimes < 4){
-  //console.log(guessTimes);
-  if (guess < correctNum && guess > 6) {
-    guess = Number(prompt('Your close !! .... try again  ? '));
-  }else if (guess > correctNum && guess < 14) {
-    guess = Number(prompt('Your close !! .... try again  ? '));
-  } else if (guess < 7 ) {
-    guess = Number(prompt('Your are too low !! .... try again  ? '));
-  }else if (guess > 13 ) {
-    guess = Number(prompt('Your are too high !! .... try again  ? '));
-  }
-  else if(guess === correctNum ){
-    alert('Correct, You\'r gussing is right ');
-    score++;
-    break;
+    if(art === 'YES' || art === 'Y'){
+      myMsg = alert(' So you already know me , thats great ');
+      score ++;
+    } else if(art === 'NO' || art === 'N') {
+      myMsg = alert(' The hand made that I use to make is String art ');
+    } else {
+      myMsg = alert(' your didn\'t enter yes or no :( ... I make a string art ');
+    }
+  
+    return myMsg;
   }
 
-  guessTimes ++;
-}
-
-//console.log('the number of attempts for the number is ' + guessTimes);
-
-if(guessTimes === 4){
-  alert('sorry You have lost all your attempts :( ');
-}
+  var art = prompt('Do you know what kind of hand made I use to make ? ').toUpperCase();
+  Q5(art);
 
 
-var movie = prompt('Try to guess one of my favourite movies .. ;) ').toLowerCase();
-var movList =['harry potter','lord of the ring','fantastic beasts','aladdin'];
-var guessTimes2 = 1;
+  function  Q6 (str){
 
+    if(str === 'YES' || str === 'Y'){
+      myMsg = alert(' Great , I\'m gonna show you some of my works ');
+      score ++;
+    } else if(str === 'NO' || str === 'N') {
+      myMsg = alert(' It\'s ok .. now your going to know it ');
+    } else {
+      myMsg = alert('your didn\'t enter yes or no :( ');
+    }
+  
+    return myMsg;
+  }
+  
+  var str = prompt('Do you know what the String art is ? ').toUpperCase();
+  Q6(str);
+
+  function  Q7 (guess){
+
+    while(guessTimes < 4){
+      //console.log(guessTimes);
+      if (guess < correctNum && guess > 6) {
+        guess = Number(prompt('Your close !! .... try again  ? '));
+      }else if (guess > correctNum && guess < 14) {
+        guess = Number(prompt('Your close !! .... try again  ? '));
+      } else if (guess < 7 ) {
+        guess = Number(prompt('Your are too low !! .... try again  ? '));
+      }else if (guess > 13 ) {
+        guess = Number(prompt('Your are too high !! .... try again  ? '));
+      }
+      else if(guess === correctNum ){
+        myMsg = alert('Correct, You\'r gussing is right ');
+        score++;
+        break;
+      }
+    
+      guessTimes ++;
+    }
+    
+    //console.log('the number of attempts for the number is ' + guessTimes);
+    
+    if(guessTimes === 4){
+      myMsg = alert('sorry You have lost all your attempts :( ');
+    }
+  
+    return myMsg;
+  }
+
+  var guess =  Number(prompt('Guess what is my favourite number ? "Hint ... it\'s between 1-20 " '));
+  Q7(guess);
+
+
+
+function Q8(){
+  
 while(guessTimes2 < 6){
 
   //console.log('movies gu time : ' + guessTimes2);
@@ -116,7 +170,7 @@ while(guessTimes2 < 6){
       //console.log(i);
       continue; }
     else {
-      alert('Correct, You\'r gussing is right and you\'r gonna see list of my favourite movies inside the website');
+      myMsg = alert('Correct, You\'r gussing is right and you\'r gonna see list of my favourite movies inside the website');
       score++;
       break;
     }
@@ -135,10 +189,36 @@ while(guessTimes2 < 6){
 
 
 if(guessTimes2 === 6){
-  alert('sorry You have lost all your attempts :( you\'r gonna see a list of my favourite movies inside the website');
+myMsg = alert('sorry You have lost all your attempts :( you\'r gonna see a list of my favourite movies inside the website');
 }
 
-alert('Your score is ' + score + ' out of 6 .. ' );
+
+return myMsg;
+}
+
+
+var movie = prompt('Try to guess one of my favourite movies .. ;) ').toLowerCase();
+Q8();
+alert('Your score is ' + score + ' out of 7 .. ' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 
 /*var ul = document.getElementById('list');
@@ -148,4 +228,14 @@ for(var n = 0 ; n < movList.length ; n++ ){
   li.appendChild(document.createTextNode(movList[i]));
   ul.appendChild(li);
 
-}*/
+}*/ 
+
+
+
+
+ 
+
+
+
+
+
