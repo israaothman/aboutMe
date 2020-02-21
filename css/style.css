@@ -1,12 +1,153 @@
+
+body {
+    background-color: beige;
+}
+
+
+
 header{
+    background-image: url(https://media3.giphy.com/media/DIYVI7Iz4dmnu/source.gif);
+    background-size: cover;
+    height: 222px;
     text-align: center;
-    background: #148ad8;
+    color : white;
     padding: 8px;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+
 h1{
     font-size: 100px;
+    padding-top: 50px;
+    color: darkmagenta;
+    font-family: cursive;
 }
+.icons {
+    position: absolute;
+    top: 0;
+}
+#me{
+    width:150px;
+    height: 150x;
+    border-radius: 1000px;
+    float: initial;
+    margin-left: 50%;
+    margin-top: 0px;
+    box-shadow: 10px 10px 5px grey;
+    position: absolute;
+    top: 178px;
+}
+
+
+
+.container{
+    margin: auto;
+    outline: 2px solid #b704cc;
+    width: 90%;
+    height: 90%;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-purple-pink-gradient-flat-space-planet-advertising-background-image_229596.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+span{
+  float:right;
+  font-size: 28px;
+}
+.div1, .div2, .div3, .div4 {
+    text-align: left;
+    vertical-align: middle;
+    width: 25%;
+    height: fit-content;
+    color: black;
+    line-height: 1.5;
+    width: 287px;
+    padding-top: 0px;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 90px;
+    
+}
+.div1{
+    background-color: #740081;
+    color: white;
+     
+}
+.div2{
+  margin-left: 25%;
+  background-color: #9e2caa;
+  color: white;
+}
+.div3{
+  margin-left: 50%;;
+  background-color: #c558d1;
+}
+
+.div4{
+  margin-left: 75%;
+  background-color: #de9ce6;
+  width: unset;
+  padding: 15px;
+  padding-bottom: 0px;
+
+}
+
+
+h4 {
+    font-size: x-large;
+    font-weight: 900;
+    font-family: cursive;
+    text-align: center;
+}
+
+
+
+
+
+.gussingGame{
+    border-radius: 12px;
+    background-color: #ffbe02ad;
+    border: none;
+    color: black;
+    padding: 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+
 
 nav ul li a{
     color: rgb(71, 26, 26);
@@ -23,7 +164,7 @@ ol  {
     padding: 20px;
     margin: 10px;
     list-style-type: decimal;
-    background-color: beige;
+    
 
 }
 h2{
@@ -37,15 +178,10 @@ p{
     font-size:large;
     margin: 10px;
     padding: 10px;
-    background-color: beige;
+    
 }
 
-#me{
-    width:200px;
-    height: 250px;
-    float: right;
-    margin: 8px;
-}
+
 
 ul{
     padding: 20px;
@@ -55,12 +191,12 @@ ul li {
     font-size: 15px;
     margin-left: 20px;
     padding: 2px;
-    background-color: beige;
+    
     list-style-type: square
  }
 
 footer{
-    background: #148ad8;
+    background: darkmagenta;
     padding: 2px 23px;
     text-align: center;
 }
