@@ -144,9 +144,21 @@ h4 {
     top: 0px;
     right: 0px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.gussingGame:hover{
+    background-color: wheat;
+    color: rgb(255, 0, 106);
 
 }
 
+.gussingGame:active {
+    background-color: wheat;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 
 nav ul li a{

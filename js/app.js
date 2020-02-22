@@ -19,13 +19,12 @@ function allJS (){
   function Q1 (gender){
 
     if(gender === 'YES' || gender === 'Y'){
-      document.body.style.background = 'pink';
-      myMsg = alert('the background of the webpage will be pink');
+      myMsg = alert('Then I guess you\'re gonna like the colors of my webpage :) ');
     } else if(gender === 'NO' || gender === 'N') {
-      document.body.style.background = 'lightblue';
-      myMsg =alert(' the background of the webpage will be lightblue ');
+
+      myMsg =alert(' I hope you like my webpage colors :P ');
     } else {
-      myMsg =alert(' your didn\'t enter yes or no  :( ');
+      myMsg =alert(' you didn\'t enter yes or no  :( ');
     }
 
     return myMsg ;
@@ -44,7 +43,7 @@ function allJS (){
     } else if(me === 'NO' || me === 'N') {
       myMsg = alert(' its ok .. I am a girl');
     } else {
-      myMsg = alert(' your didn\'t enter yse or no :( ...  I am Girl');
+      myMsg = alert(' you didn\'t enter yse or no :( ...  I am Girl');
     }
 
     return myMsg;
@@ -64,7 +63,7 @@ function allJS (){
     } else if(prog === 'NO' || prog === 'N') {
       myMsg = alert(' No I do like it ');
     } else {
-      myMsg = alert('your didn\'t enter yes or no :(  ... yes I like it ');}
+      myMsg = alert('you didn\'t enter yes or no :(  ... yes I like it ');}
 
     return myMsg;
   }
@@ -81,7 +80,7 @@ function allJS (){
     } else if(handmade === 'NO' || handmade === 'N') {
       myMsg = alert('No , I do like it and I have my own hand made gifts ');
     } else {
-      myMsg = alert(' your didn\'t enter yes or no :( ... yes I do like it ');
+      myMsg = alert(' you didn\'t enter yes or no :( ... yes I do like it ');
     }
     return myMsg;
   }
@@ -98,7 +97,7 @@ function allJS (){
     } else if(art === 'NO' || art === 'N') {
       myMsg = alert(' The hand made that I use to make is String art ');
     } else {
-      myMsg = alert(' your didn\'t enter yes or no :( ... I make a string art ');
+      myMsg = alert(' you didn\'t enter yes or no :( ... I make a string art ');
     }
 
     return myMsg;
@@ -117,9 +116,9 @@ function allJS (){
       myMsg = alert(' Great , I\'m gonna show you some of my works ');
       score ++;
     } else if(str === 'NO' || str === 'N') {
-      myMsg = alert(' It\'s ok .. now your going to know it ');
+      myMsg = alert(' It\'s ok .. now you are going to know it ');
     } else {
-      myMsg = alert('your didn\'t enter yes or no :( ');
+      myMsg = alert('you didn\'t enter yes or no :( ');
     }
 
     return myMsg;
@@ -131,7 +130,7 @@ function allJS (){
   function Q7 (guess){
 
     while(guessTimes < 4){
-    //console.log(guessTimes);
+
       if (guess < correctNum && guess > 6) {
         guess = Number(prompt('Your close !! .... try again  ? '));
       }else if (guess > correctNum && guess < 14) {
@@ -150,7 +149,6 @@ function allJS (){
       guessTimes ++;
     }
 
-    //console.log('the number of attempts for the number is ' + guessTimes);
 
     if(guessTimes === 4){
       myMsg = alert('sorry You have lost all your attempts :( ');
@@ -168,14 +166,13 @@ function allJS (){
 
     while(guessTimes2 < 6){
 
-      //console.log('movies gu time : ' + guessTimes2);
+
 
       for(var i = 0 ; i < movList.length ; i++ ){
         if (movie !== movList[i]) {
-          //console.log(i);
           continue; }
         else {
-          myMsg = alert('Correct, You\'r gussing is right and you\'r gonna see list of my favourite movies inside the website');
+          myMsg = alert('Correct, You\'r gussing is right and you\'re gonna see list of my favourite movies inside the website');
           score++;
           break;
         }
@@ -188,13 +185,8 @@ function allJS (){
       } }
 
 
-    //console.log('the number of attempts for the movies is ' + guessTimes2);
-    //console.log('the score is ' + score);
-
-
-
     if(guessTimes2 === 6){
-      myMsg = alert('sorry You have lost all your attempts :( you\'r gonna see a list of my favourite movies inside the website');
+      myMsg = alert('sorry You have lost all your attempts :( you\'re gonna see a list of my favourite movies inside the website');
     }
 
 
@@ -204,24 +196,7 @@ function allJS (){
 
   var movie = prompt('Try to guess one of my favourite movies .. ;) ').toLowerCase();
   Q8();
-  alert('Your score is ' + score + ' out of 7 .. ' );
-
-
-
-
-
-  /*
-
-
-/*var ul = document.getElementById('list');
-var li = document.createElement('li');
-
-for(var n = 0 ; n < movList.length ; n++ ){
-  li.appendChild(document.createTextNode(movList[i]));
-  ul.appendChild(li);
-
-}*/
-
+  alert('You\'r score is ' + score + ' out of 7 .. ' );
 
 
 }
