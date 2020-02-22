@@ -19,3 +19,12 @@ in this lab I did some modifications on the code like :
 - I add two more questions one of them I use while in the code 
   and the other one I use nested loop (for inside while) and Array 
 - finally I added a score for the user it contains how many right questions he/she answered ...{for the yes or no questions I count the yes as     acorrect answer }
+
+
+# Lab 04 
+  - I did the pair programming with Raghad AlQuraan 
+  - I turned all here questions on the guessing game to functions and so she did to my code 
+
+# Lab 05 
+   - I added additional touches to the CSS file 
+   - I turend the js file to a function and I put the call for it on a BUTTON 
