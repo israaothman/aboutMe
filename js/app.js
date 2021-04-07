@@ -203,6 +203,6 @@ function allJS (){
 
 
 
-
+console.log(score);
 
 
